@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/sai-1', function (req, res) {
-  res.send('i love amrita');
+ res.sendFile(path.join(__dirname, 'ui', 'sai-1.html')); 
 });
 
 app.get('/ui/madi.png', function (req, res) {
